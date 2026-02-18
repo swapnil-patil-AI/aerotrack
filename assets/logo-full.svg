@@ -72,9 +72,9 @@
     <circle cx="0" cy="0" r="4" fill="#ffffff"/>
   </g>
   
-  <!-- Text: AeroTrack -->
+  <!-- Text: NDCGenie -->
   <text x="145" y="70" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700" fill="url(#textGrad)">
-    Aero<tspan fill="#4299e1">Track</tspan>
+    NDC<tspan fill="#4299e1">Genie</tspan>
   </text>
   
   <!-- Text: AI -->
