@@ -1,4 +1,4 @@
-# ✈️ AeroTrack AI - Enterprise Airline Transaction Lifecycle Tracker
+# ✈️ NDCGenie AI - Enterprise Airline Transaction Lifecycle Tracker
 
 <div align="center">
 
@@ -53,7 +53,7 @@ When failures occur at any stage, customer service teams struggle to:
 
 ### Solution
 
-**AeroTrack AI** provides a unified, AI-powered platform that enables customer service teams to:
+**NDCGenie AI** provides a unified, AI-powered platform that enables customer service teams to:
 
 1. **Natural Language Queries**: Ask questions about transactions in plain English
 2. **Complete Visibility**: View the entire transaction lifecycle at a glance
@@ -130,8 +130,8 @@ python-dateutil>=2.8.2
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/aerotrack-ai.git
-cd aerotrack-ai
+git clone https://github.com/your-org/NDCGenie-ai.git
+cd NDCGenie-ai
 
 # Create virtual environment
 python -m venv venv
@@ -162,8 +162,8 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 
 ```bash
 # Build and run
-docker build -t aerotrack-ai .
-docker run -p 8501:8501 aerotrack-ai
+docker build -t NDCGenie-ai .
+docker run -p 8501:8501 NDCGenie-ai
 ```
 
 ---
@@ -202,7 +202,7 @@ Edit `utils/config.py` for application-level settings:
 ```python
 @dataclass
 class AppConfig:
-    APP_NAME: str = "AeroTrack AI"
+    APP_NAME: str = "NDCGenie"
     APP_VERSION: str = "2.0.0"
     ANTHROPIC_MODEL: str = "claude-sonnet-4-20250514"
     DEMO_TRANSACTION_COUNT: int = 200
@@ -222,7 +222,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/your-org/aerotrack-ai.git
+git remote add origin https://github.com/your-org/NDCGenie-ai.git
 git push -u origin main
 ```
 
@@ -244,7 +244,7 @@ git push -u origin main
 
 ```bash
 # Using AWS Elastic Beanstalk
-eb init aerotrack-ai --platform python-3.11
+eb init NDCGenie-ai --platform python-3.11
 eb create production
 eb deploy
 ```
@@ -256,7 +256,7 @@ eb deploy
 echo "web: streamlit run app.py --server.port=$PORT" > Procfile
 
 # Deploy
-heroku create aerotrack-ai
+heroku create NDCGenie-ai
 heroku config:set ANTHROPIC_API_KEY=sk-ant-xxx
 git push heroku main
 ```
@@ -525,6 +525,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for Customer Service Excellence**
 
-[⬆ Back to Top](#️-aerotrack-ai---enterprise-airline-transaction-lifecycle-tracker)
+[⬆ Back to Top](#️-NDCGenie-ai---enterprise-airline-transaction-lifecycle-tracker)
 
 </div>

@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════════════════════════════════
-# AeroTrack AI - Docker Configuration
+# NDCGenie AI - Docker Configuration
 # Production-ready container for airline transaction tracking
 # ═══════════════════════════════════════════════════════════════════════════════
 

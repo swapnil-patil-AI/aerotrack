@@ -1,5 +1,5 @@
 """
-AeroTrack AI - Enterprise Airline Transaction Lifecycle Tracker
+NDCGenie AI - Enterprise Airline Transaction Lifecycle Tracker
 Main Application Entry Point
 
 A production-ready Streamlit application powered by Claude AI for 
@@ -551,7 +551,7 @@ def render_sidebar():
         st.markdown("""
         <div style="text-align: center; padding: 1rem 0;">
             <div style="font-size: 2.5rem;">✈️</div>
-            <div style="font-weight: 700; font-size: 1.25rem; color: #1a365d;">AeroTrack AI</div>
+            <div style="font-weight: 700; font-size: 1.25rem; color: #1a365d;">NDCGenie AI</div>
             <div style="font-size: 0.75rem; color: #718096;">Enterprise Edition v2.0</div>
         </div>
         """, unsafe_allow_html=True)
@@ -763,7 +763,7 @@ def render_sidebar():
                 st.download_button(
                     "⬇️ Download",
                     data=csv_data,
-                    file_name=f"aerotrack_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                    file_name=f"NDCGenie_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                     mime="text/csv",
                     use_container_width=True
                 )
@@ -774,7 +774,7 @@ def render_sidebar():
                 st.download_button(
                     "⬇️ Download",
                     data=json_data,
-                    file_name=f"aerotrack_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+                    file_name=f"NDCGenie_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
                     mime="application/json",
                     use_container_width=True
                 )
@@ -851,7 +851,7 @@ def render_chat_tab():
             # Welcome message
             st.markdown("""
             <div class="chat-message assistant">
-                <div class="chat-message-header">🤖 AeroTrack AI</div>
+                <div class="chat-message-header">🤖 NDCGenie AI</div>
                 <div class="chat-message-content">
                     <p>👋 Welcome! I'm your AI-powered transaction assistant. I can help you with:</p>
                     <ul>
@@ -1459,7 +1459,7 @@ def render_help_tab():
     
     with st.expander("🚀 Getting Started", expanded=True):
         st.markdown("""
-        **Welcome to AeroTrack AI!**
+        **Welcome to NDCGenie AI!**
         
         1. **API Key Setup**: 
            - For Streamlit Cloud: Add `ANTHROPIC_API_KEY` to your app's Secrets

@@ -1,5 +1,5 @@
 """
-RBAC Integration Example for AeroTrack AI
+RBAC Integration Example for NDCGenie AI
 Shows how to integrate the RBAC system with the main application.
 
 This file demonstrates the authentication and authorization flow.
@@ -51,7 +51,7 @@ def main():
     # STEP 3: BUILD NAVIGATION BASED ON PERMISSIONS
     # ═══════════════════════════════════════════════════════════════════════
     
-    st.title(f"✈️ AeroTrack AI")
+    st.title(f"✈️ NDCGenie AI")
     st.markdown(f"Welcome, **{user.get_display_name()}**! {render_role_badge(user.role)}", unsafe_allow_html=True)
     
     # Build menu based on permissions
@@ -275,7 +275,7 @@ def render_settings_demo():
     st.header("⚙️ Settings")
     st.write("System configuration options")
     
-    st.text_input("API Endpoint", value="https://api.aerotrack.ai")
+    st.text_input("API Endpoint", value="https://api.NDCGenie.ai")
     st.number_input("Session Timeout (hours)", value=8)
     st.checkbox("Enable Debug Mode", value=False)
     
@@ -311,7 +311,7 @@ def manager_only_function():
 
 if __name__ == "__main__":
     st.set_page_config(
-        page_title="AeroTrack AI - RBAC Demo",
+        page_title="NDCGenie - Demo",
         page_icon="✈️",
         layout="wide"
     )

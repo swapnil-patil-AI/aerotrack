@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════════════════════════════════
-# AeroTrack AI - Docker Compose Configuration
+# NDCGenie AI - Docker Compose Configuration
 # Production deployment with optional services
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -7,9 +7,9 @@ version: '3.8'
 
 services:
   # Main Application
-  aerotrack:
+  NDCGenie:
     build: .
-    container_name: aerotrack-ai
+    container_name: NDCGenie-ai
     restart: unless-stopped
     ports:
       - "8501:8501"
@@ -19,7 +19,7 @@ services:
       - STREAMLIT_SERVER_ADDRESS=0.0.0.0
     volumes:
       # Mount for persistent data (optional)
-      - aerotrack_data:/app/data
+      - NDCGenie_data:/app/data
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
       interval: 30s
@@ -27,13 +27,13 @@ services:
       retries: 3
       start_period: 10s
     networks:
-      - aerotrack_network
+      - NDCGenie_network
 
   # Optional: Nginx reverse proxy for production
   # Uncomment if you need SSL termination or load balancing
   # nginx:
   #   image: nginx:alpine
-  #   container_name: aerotrack-nginx
+  #   container_name: NDCGenie-nginx
   #   restart: unless-stopped
   #   ports:
   #     - "80:80"
@@ -42,14 +42,14 @@ services:
   #     - ./nginx.conf:/etc/nginx/nginx.conf:ro
   #     - ./ssl:/etc/nginx/ssl:ro
   #   depends_on:
-  #     - aerotrack
+  #     - NDCGenie
   #   networks:
-  #     - aerotrack_network
+  #     - NDCGenie_network
 
 volumes:
-  aerotrack_data:
+  NDCGenie_data:
     driver: local
 
 networks:
-  aerotrack_network:
+  NDCGenie_network:
     driver: bridge

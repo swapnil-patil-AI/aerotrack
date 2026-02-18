@@ -1,8 +1,8 @@
-# AeroTrack AI - Real-World Feature Enhancements
+# NDCGenie AI - Real-World Feature Enhancements
 
 ## Executive Summary
 
-This document outlines real-world airline industry scenarios that can be added to AeroTrack AI to make it truly enterprise-ready. These enhancements are based on actual airline operations, GDS systems, and customer service workflows.
+This document outlines real-world airline industry scenarios that can be added to NDCGenie AI to make it truly enterprise-ready. These enhancements are based on actual airline operations, GDS systems, and customer service workflows.
 
 ---
 
@@ -414,7 +414,7 @@ With these enhancements, the AI can answer:
 ## 📁 New Files Structure
 
 ```
-aerotrack_ai/
+NDCGenie_ai/
 ├── data/
 │   ├── demo_data.py          # Current
 │   ├── enhanced_models.py    # NEW - Enhanced data models
@@ -436,4 +436,4 @@ aerotrack_ai/
 
 ---
 
-*This enhancement roadmap transforms AeroTrack AI from a demo into a production-ready enterprise system.*
+*This enhancement roadmap transforms NDCGenie AI from a demo into a production-ready enterprise system.*
